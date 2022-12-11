@@ -25,7 +25,7 @@ namespace Hello_Word
             Console.Write("Hello, \n");
             if (_order == "-")
             {
-                for (int i = _name.Length - 1; i >= 0; i--)
+                for (int i = 1; i < _name.Length; i += 2)
                 {
                     Console.Write(_name[i] + "\n");
                 }
@@ -33,11 +33,10 @@ namespace Hello_Word
             else
             {
 
-                for (int i = 1; i < _name.Length; i+=2)
+                for (int i = 1; i < _name.Length; i += 2)
                 {
                     Console.Write(_name[i] + "\n");
                 }
-
             }
             Console.WriteLine("!");
         }
